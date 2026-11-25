@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#070914">
+  <meta name="description" content="Mayank Virani — Computer Science Engineering student exploring AI, machine learning, web development and connected technology.">
+  <title>Mayank Virani — Neon Nexus / MK Edition</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="loader" id="loader" aria-label="Loading portfolio">
+    <div class="loader-mark">MV<span>.</span></div>
+    <div class="loader-track"><span id="loaderBar"></span></div>
+    <p>INITIALIZING PERSONAL UNIVERSE <b id="loaderPercent">00%</b></p>
+  </div>
+
+  <canvas id="starfield" aria-hidden="true"></canvas>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <div class="grain"></div>
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <header class="header">
+    <nav class="nav wrap" aria-label="Main navigation">
+      <a class="brand" href="#home"><span class="brand-icon">M<span>.</span></span><span>MK AI<small>VIRANI / PORTFOLIO</small></span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <div class="nav-links" id="navLinks">
+        <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#journey">Journey</a><a href="#github">GitHub</a><a href="#certificates">Certificates</a>
+        <a class="nav-cta" href="#contact">Let's connect <span>↗</span></a>
+      </div>
+      <div class="nav-tools"><button class="tool-toggle" id="themeToggle" aria-label="Switch visual theme" title="Switch theme">◐ <span>THEME</span></button><button class="tool-toggle" id="soundToggle" aria-label="Enable interface sounds" title="Enable interface sounds">♫ <span>SOUND OFF</span></button><button class="sound-toggle" id="motionToggle" aria-label="Toggle motion effects" title="Toggle motion effects">✦</button></div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero wrap section" id="home">
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><i></i> AVAILABLE FOR LEARNING & COLLABORATION</div>
+        <p class="mono accent hero-overline">HELLO, WORLD. I'M</p>
+        <h1>Mayank<br><span class="gradient">Virani<span class="period">.</span></span></h1>
+        <div class="role-line"><span class="role-prefix">I EXPLORE</span><span id="typedRole">ARTIFICIAL INTELLIGENCE</span><span class="caret"></span></div>
+        <p class="hero-desc">A Computer Science student fascinated by intelligent systems, creative code, and technology that solves real-world problems.</p>
+        <div class="hero-buttons">
+          <a class="btn btn-primary magnetic" href="#projects">Explore my work <span>↗</span></a>
+          <a class="btn btn-outline" href="resume.pdf" download>Download resume <span>↓</span></a>
+        </div>
+        <div class="socials mono">
+          <a href="https://linkedin.com/in/mayank-virani-6b8809317" target="_blank" rel="noreferrer">LINKEDIN ↗</a>
+          <a href="https://github.com/mayankvirani777-sys" target="_blank" rel="noreferrer">GITHUB ↗</a>
+          <a href="mailto:mayankvirani777@gmail.com">EMAIL ↗</a>
+        </div>
+      </div>
+
+      <div class="hero-stage reveal" aria-label="Mayank Virani portrait showcase">
+        <div class="stage-grid"></div>
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div><div class="orbit orbit-c"></div>
+        <div class="portrait-halo"></div>
+        <div class="portrait-frame" id="coreWrap">
+          <div class="portrait-glass"></div>
+          <img src="assets/mayank-profile.jpg" alt="Mayank Virani wearing a black suit and white shirt" class="profile-photo">
+          <div class="portrait-scan"></div>
+                    <span class="frame-corner corner-tl"></span><span class="frame-corner corner-tr"></span>
+          <span class="frame-corner corner-bl"></span><span class="frame-corner corner-br"></span>
+        </div>
+                <div class="hud hud-bottom"><span>STATUS</span><b><i></i> CURIOUS BY DEFAULT</b></div>
+        <div class="float-label label-code">01 / BUILD <strong>{ }</strong></div>
+        <div class="float-label label-ai">02 / EXPLORE <strong>✳</strong></div>
+        <div class="stage-cross cross-one">+</div><div class="stage-cross cross-two">+</div>
+      </div>
+      <a class="scroll-cue mono" href="#about"><span></span> SCROLL TO EXPLORE</a>
+    </section>
+
+    <section class="section wrap" id="about">
+      <div class="section-head reveal"><p class="mono accent">01 / THE HUMAN BEHIND THE CODE</p><h2>Curiosity is my<br><span class="gradient">starting point.</span></h2></div>
+      <div class="about-layout">
+        <div class="about-copy reveal">
+          <p class="lead">I'm a Computer Science Engineering student at Unitedworld Institute of Technology, Karnavati University, exploring the intersection of software, AI, and the physical world.</p>
+          <p>I'm building strong foundations in programming while learning by making things: from an automated irrigation concept to interactive web experiences and experiments with intelligent systems.</p>
+          <p>I don't claim to know everything. I enjoy the process of asking better questions, testing ideas, and improving one project at a time.</p>
+          <div class="quote-line">“Stay curious. Keep creating. Let the work speak.”</div>
+        </div>
+        <div class="about-panel reveal">
+          <div class="panel-top mono"><span>PERSONAL DATA / 001</span><span class="live"><i></i> ACTIVE</span></div>
+          <div class="data-row"><span>EDUCATION</span><strong>B.Tech · Computer Science</strong></div>
+          <div class="data-row"><span>INSTITUTE</span><strong>UIT, Karnavati University</strong></div>
+          <div class="data-row"><span>FOCUS AREAS</span><strong>AI / ML · Web Development</strong></div>
+          <div class="data-row"><span>CURRENT MODE</span><strong>Learning & building</strong></div>
+          <div class="data-row"><span>BEYOND TECH</span><strong>Badminton · Harmonium</strong></div>
+          <div class="panel-foot mono">GUJARAT, INDIA <span>EST. 2026</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section skills-section" id="skills">
+      <div class="wrap">
+        <div class="section-head reveal"><p class="mono accent">02 / MY TOOLKIT</p><h2>Tools for the <span class="gradient">next idea.</span></h2><p class="section-sub">Explore the areas I'm actively learning and practicing. Select a node to see its focus.</p></div>
+        <div class="skills-explorer reveal">
+          <div class="skill-map" id="skillMap">
+            <div class="skill-orbit orbit-skill-one"></div><div class="skill-orbit orbit-skill-two"></div>
+            <button class="skill-node node-center active" data-skill="overview"><span>MV</span><small>TOOLKIT</small></button>
+            <button class="skill-node node-top" data-skill="programming"><span>⌘</span><small>CODE</small></button>
+            <button class="skill-node node-right" data-skill="web"><span>⌁</span><small>WEB</small></button>
+            <button class="skill-node node-bottom" data-skill="ai"><span>✳</span><small>AI / ML</small></button>
+            <button class="skill-node node-left" data-skill="hardware"><span>▣</span><small>HARDWARE</small></button>
+          </div>
+          <div class="skill-detail" id="skillDetail">
+            <p class="mono accent">SELECT A CONSTELLATION</p><h3>Growing through practice.</h3>
+            <p>My toolkit is a work in progress. Each skill grows through coursework, experiments, and projects.</p>
+            <div class="skill-tags"><span>C</span><span>Python</span><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Arduino</span><span>Git & GitHub</span></div>
+          </div>
+        </div>
+        <p class="skill-disclaimer mono">NO INFLATED RATINGS. JUST REAL PROGRESS.</p>
+      </div>
+    </section>
+
+    <section class="section wrap dashboard-section" id="dashboard">
+      <div class="section-head reveal"><p class="mono accent">02B / LIVE SKILL DASHBOARD</p><h2>A toolkit in <span class="gradient">motion.</span></h2><p class="section-sub">An interactive snapshot of current learning areas. Indicators describe focus, not measured proficiency or real-time telemetry.</p></div>
+      <div class="dashboard-grid reveal"><div class="dashboard-metric"><span class="mono">PROGRAMMING</span><b>C · PYTHON</b><div class="meter"><i></i></div><small>FOUNDATIONS / PRACTICE</small></div><div class="dashboard-metric"><span class="mono">WEB</span><b>HTML · CSS · JS</b><div class="meter"><i></i></div><small>BUILDING INTERACTIVE UI</small></div><div class="dashboard-metric"><span class="mono">AI / ML</span><b>CONCEPTS · AGENTS</b><div class="meter"><i></i></div><small>ACTIVE EXPLORATION</small></div><div class="dashboard-metric"><span class="mono">HARDWARE</span><b>ARDUINO · IOT</b><div class="meter"><i></i></div><small>PROTOTYPE LEARNING</small></div></div>
+    </section>
+
+    <section class="section wrap" id="projects">
+      <div class="section-head reveal"><p class="mono accent">03 / SELECTED EXPERIMENTS</p><h2>Ideas made <span class="gradient">tangible.</span></h2><p class="section-sub">A selection of projects and topics I'm building or exploring. Status labels reflect their current stage.</p></div>
+      <div class="project-toolbar reveal"><div class="filters" role="group" aria-label="Filter projects"><button class="filter active" data-filter="all">ALL <span>05</span></button><button class="filter" data-filter="iot">IOT</button><button class="filter" data-filter="web">WEB</button><button class="filter" data-filter="ai">AI / ML</button></div><span class="mono project-count">PROJECT ARCHIVE / 2026</span></div>
+      <div class="projects-grid">
+        <article class="project-card project-wide reveal" data-category="iot">
+          <div class="project-visual irrigation-visual"><div class="sun-orb"></div><div class="field"></div><div class="sprout">♧</div><div class="water">滴</div><span class="visual-index mono">SYSTEM_001 / CONNECTED AGRICULTURE</span></div>
+          <div class="project-info"><div class="project-meta mono"><span>01 — IOT & AUTOMATION</span><span class="status">PROJECT CONCEPT</span></div><h3>Smart Irrigation System</h3><p>An automated irrigation system concept using soil-moisture sensing and a microcontroller to determine when watering is needed. Designed to reduce unnecessary water use and manual effort.</p><div class="tags"><span>Arduino</span><span>Soil Moisture Sensor</span><span>Automation</span></div><button class="case-toggle" type="button" aria-expanded="false">OPEN CASE STUDY <span>＋</span></button><div class="case-detail" hidden><p><b>Challenge:</b> Translate the idea into a clear, testable system.</p><p><b>Approach:</b> Break the concept into components, document assumptions, and validate each stage.</p><p><b>Next step:</b> Add implementation screenshots, source links, and measured results as the project develops.</p></div></div></div>
+        </article>
+        <article class="project-card reveal" data-category="web">
+          <div class="project-visual cyber-visual"><div class="mini-window"><div class="mini-dots">● ● ●</div><div class="mini-lock">◈</div><div class="mini-line"></div><div class="mini-line short"></div><div class="mini-button">ACCESS</div></div><span class="visual-index mono">INTERFACE_002 / WEB EXPERIENCE</span></div>
+          <div class="project-info"><div class="project-meta mono"><span>02 — WEB DEVELOPMENT</span><span class="status">BUILT</span></div><h3>Sci-Fi Animated Login</h3><p>A cinematic login interface experiment with a video background, atmospheric overlays, and a futuristic visual transition.</p><div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><button class="case-toggle" type="button" aria-expanded="false">OPEN CASE STUDY <span>＋</span></button><div class="case-detail" hidden><p><b>Challenge:</b> Translate the idea into a clear, testable system.</p><p><b>Approach:</b> Break the concept into components, document assumptions, and validate each stage.</p><p><b>Next step:</b> Add implementation screenshots, source links, and measured results as the project develops.</p></div></div></div>
+        </article>
+        <article class="project-card reveal" data-category="iot">
+          <div class="project-visual gesture-visual"><div class="radar"><i></i><i></i><i></i><b>GESTURE<br>DETECT</b></div><span class="visual-index mono">SENSOR_003 / VEHICLE SAFETY</span></div>
+          <div class="project-info"><div class="project-meta mono"><span>03 — LIVE PROJECT EXPOSURE</span><span class="status">COLLABORATIVE WORK</span></div><h3>Gesture Detectors in Vehicles</h3><p>Worked with a live project involving gesture detectors in vehicles. Further technical details can be added as the implementation is documented.</p><div class="tags"><span>Sensors</span><span>Embedded Systems</span><span>Exploration</span></div><button class="case-toggle" type="button" aria-expanded="false">OPEN CASE STUDY <span>＋</span></button><div class="case-detail" hidden><p><b>Challenge:</b> Translate the idea into a clear, testable system.</p><p><b>Approach:</b> Break the concept into components, document assumptions, and validate each stage.</p><p><b>Next step:</b> Add implementation screenshots, source links, and measured results as the project develops.</p></div></div></div>
+        </article>
+        <article class="project-card reveal" data-category="ai">
+          <div class="project-visual rl-visual"><div class="rl-board"><i></i><i></i><i></i><i></i><b>◆</b><i></i><i></i><i></i><em>◎</em></div><span class="visual-index mono">LEARNING_004 / DECISION SYSTEMS</span></div>
+          <div class="project-info"><div class="project-meta mono"><span>04 — ARTIFICIAL INTELLIGENCE</span><span class="status">EXPLORING</span></div><h3>Reinforcement Learning</h3><p>Exploring how an agent learns through actions, environmental feedback, rewards, and the balance between exploration and exploitation.</p><div class="tags"><span>AI</span><span>Python</span><span>RL Concepts</span></div><button class="case-toggle" type="button" aria-expanded="false">OPEN CASE STUDY <span>＋</span></button><div class="case-detail" hidden><p><b>Challenge:</b> Translate the idea into a clear, testable system.</p><p><b>Approach:</b> Break the concept into components, document assumptions, and validate each stage.</p><p><b>Next step:</b> Add implementation screenshots, source links, and measured results as the project develops.</p></div></div></div>
+        </article>
+        <article class="project-card reveal" data-category="ai">
+          <div class="project-visual agent-visual"><div class="agent-flow"><b>GOAL</b><span>↓</span><b>THINK</b><span>↓</span><b>ACT</b></div><span class="visual-index mono">AUTONOMY_005 / AGENT SYSTEMS</span></div>
+          <div class="project-info"><div class="project-meta mono"><span>05 — AI AGENTS</span><span class="status">EXPLORING</span></div><h3>AI Agents & Autonomous Systems</h3><p>Learning how goal-driven systems can perceive information, plan tasks, use tools, and take actions toward an objective.</p><div class="tags"><span>AI Agents</span><span>Generative AI</span><span>Automation</span></div><button class="case-toggle" type="button" aria-expanded="false">OPEN CASE STUDY <span>＋</span></button><div class="case-detail" hidden><p><b>Challenge:</b> Translate the idea into a clear, testable system.</p><p><b>Approach:</b> Break the concept into components, document assumptions, and validate each stage.</p><p><b>Next step:</b> Add implementation screenshots, source links, and measured results as the project develops.</p></div></div></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section wrap planet-section" id="universe">
+      <div class="section-head reveal"><p class="mono accent">04 / DIGITAL IDENTITY</p><h2>Explore my <span class="gradient">orbit.</span></h2><p class="section-sub">Every world I orbit — code, intelligence, music, sport. Hover to freeze the system, tap a planet to travel there.</p></div>
+      <div class="orbit-lab reveal">
+        <div class="orbit-stage" id="orbitStage" aria-label="Interactive orbit of interests">
+          <div class="nebula nebula-a"></div><div class="nebula nebula-b"></div>
+          <svg class="orbit-link" id="orbitLink" aria-hidden="true"><line id="orbitLine" x1="50%" y1="50%" x2="50%" y2="50%"/></svg>
+          <div class="ring ring-1"></div><div class="ring ring-2"></div><div class="ring ring-3"></div>
+          <div class="shooting s1"></div><div class="shooting s2"></div>
+          <div class="orbit-core" id="orbitCore"><i></i><span>MK</span><small>HOME BASE</small></div>
+        </div>
+        <div class="orbit-panel" id="orbitPanel" aria-live="polite">
+          <p class="mono accent" id="opEyebrow">ORBIT / HOME BASE</p>
+          <h3 id="opTitle">Mayank Virani</h3>
+          <p id="opBody">Select a planet to see what I explore there. Six worlds, one curious mind.</p>
+          <div class="skill-tags" id="opTags"><span>Code</span><span>AI</span><span>Music</span><span>Sport</span></div>
+          <div class="op-meter"><span class="mono">ENERGY</span><div class="meter"><i id="opMeter" style="width:100%"></i></div></div>
+          <a class="op-link btn btn-outline" id="opLink" href="#certificates" hidden>VIEW RELATED CERTIFICATE <span>↗</span></a>
+          <div class="op-dots" id="opDots"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section wrap" id="github"><div class="section-head reveal"><p class="mono accent">05 / OPEN SOURCE FOOTPRINT</p><h2>Connected to <span class="gradient">GitHub.</span></h2><p class="section-sub">Public repositories are loaded live from the supplied GitHub profile when the site is online.</p></div><div class="github-panel reveal"><div class="github-profile"><div class="github-mark">⌘</div><div><h3>mayankvirani777-sys</h3><p class="mono">GITHUB / PUBLIC PROFILE</p></div><a class="btn btn-outline" href="https://github.com/mayankvirani777-sys" target="_blank" rel="noreferrer">OPEN PROFILE ↗</a></div><div class="repo-grid" id="repoGrid"><p class="mono">CONNECTING TO GITHUB API…</p></div><p class="github-note mono" id="githubNote">PUBLIC REPOSITORY FEED · NO TOKEN REQUIRED</p></div></section>
+
+    <section class="section wrap" id="certificates">
+      <div class="section-head reveal"><p class="mono accent">06 / CREDENTIAL ARCHIVE</p><h2>Proof of <span class="gradient">progress.</span></h2><p class="section-sub">Certificates from academics, sport, music and technology workshops. Click any card to view it full size.</p></div>
+      <div class="cert-toolbar reveal"><div class="filters" role="group" aria-label="Filter certificates"><button class="filter cert-filter active" data-cf="all">ALL <span>04</span></button><button class="filter cert-filter" data-cf="tech">TECH</button><button class="filter cert-filter" data-cf="academic">ACADEMICS</button><button class="filter cert-filter" data-cf="sport">SPORT</button><button class="filter cert-filter" data-cf="music">MUSIC</button></div><span class="mono project-count">CREDENTIAL ARCHIVE / 2022 — 2026</span></div>
+      <div class="cert-grid" id="certGrid"></div>
+    </section>
+    <div class="lightbox" id="lightbox" hidden aria-modal="true" role="dialog" aria-label="Certificate viewer"><button class="lb-close" id="lbClose" aria-label="Close">×</button><button class="lb-nav lb-prev" id="lbPrev" aria-label="Previous">‹</button><figure><img id="lbImg" alt=""><figcaption><b id="lbTitle"></b><span class="mono" id="lbMeta"></span></figcaption></figure><button class="lb-nav lb-next" id="lbNext" aria-label="Next">›</button></div>
+
+    <section class="section journey-section" id="journey">
+      <div class="wrap">
+        <div class="section-head reveal"><p class="mono accent">04 / THE JOURNEY</p><h2>Every expert was<br><span class="gradient">once a beginner.</span></h2></div>
+        <div class="timeline">
+          <div class="timeline-item reveal"><span class="timeline-dot"></span><p class="mono accent">CURRENT · FIRST YEAR</p><div><h3>B.Tech — Computer Science Engineering</h3><p>Unitedworld Institute of Technology, Karnavati University. Building core foundations in computing and exploring AI, machine learning, programming, and practical projects.</p></div></div>
+          <div class="timeline-item reveal"><span class="timeline-dot"></span><p class="mono accent">ONGOING</p><div><h3>Learning through hands-on projects</h3><p>Smart Irrigation, Sci-Fi Login, Gesture Detector project exposure, Reinforcement Learning, and AI Agents.</p></div></div>
+          <div class="timeline-item reveal"><span class="timeline-dot"></span><p class="mono accent">ALWAYS</p><div><h3>Beyond the screen</h3><p>National-level badminton participation, harmonium performance, collaboration, and staying open to new perspectives.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section terminal-section" id="terminal">
+      <div class="wrap">
+        <div class="section-head reveal"><p class="mono accent">05 / DIRECT ACCESS</p><h2>Talk to the <span class="gradient">terminal.</span></h2><p class="section-sub">A small interactive command interface. Try <code>help</code> to see what it can do.</p></div>
+        <div class="terminal reveal">
+          <div class="terminal-bar"><div class="window-dots"><i></i><i></i><i></i></div><span class="mono">mayank@portfolio: ~</span><button id="clearTerminal">CLEAR</button></div>
+          <div class="terminal-output" id="terminalOutput" aria-live="polite"><p>NEON NEXUS TERMINAL [VERSION 1.0]</p><p>Type <b>help</b> to explore available commands.</p></div>
+          <form id="terminalForm" class="terminal-input"><label for="terminalCommand">mayank@mv:~$</label><input id="terminalCommand" autocomplete="off" spellcheck="false" placeholder="type a command..." aria-label="Terminal command"><button type="submit">RUN ↵</button></form>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="wrap contact-layout">
+        <div class="contact-copy reveal"><p class="mono accent">06 / OPEN A CHANNEL</p><h2>Have an idea?<br><span class="gradient">Let's build.</span></h2><p>Interested in technology, collaboration, projects, or a learning opportunity? Send a message and let's start a conversation.</p><a class="email-link" href="mailto:mayankvirani777@gmail.com">mayankvirani777@gmail.com ↗</a><div class="contact-social mono"><a href="https://linkedin.com/in/mayank-virani-6b8809317" target="_blank" rel="noreferrer">LINKEDIN ↗</a><a href="https://www.instagram.com/mayank_virani_777" target="_blank" rel="noreferrer">INSTAGRAM ↗</a></div></div>
+        <form class="contact-form reveal" id="contactForm"><div class="form-heading mono"><span>NEW TRANSMISSION</span><span>✳</span></div><label for="senderName">YOUR NAME</label><input id="senderName" name="name" required placeholder="Enter your name"><label for="senderEmail">YOUR EMAIL</label><input id="senderEmail" name="email" type="email" required placeholder="name@example.com"><label for="senderMessage">MESSAGE</label><textarea id="senderMessage" name="message" rows="4" required placeholder="Tell me what's on your mind..."></textarea><button class="btn btn-primary" type="submit">Prepare message <span>↗</span></button><p class="form-note" id="formNote">Opens your email application with the message prepared.</p></form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="wrap footer-inner"><a class="brand" href="#home"><span class="brand-icon">M<span>.</span></span><span>MK AI<small>VIRANI / PORTFOLIO</small></span></a><p>Designed with curiosity. Built with intention.</p><span class="mono">© <span id="year"></span> MK AI VIRANI</span></div></footer>
+
+  <button class="ai-launcher" id="aiLauncher" aria-label="Open MK AI assistant"><span class="ai-pulse"></span><span>✳</span><small>MK AI</small></button>
+  <aside class="ai-panel" id="aiPanel" aria-label="MK AI assistant" aria-hidden="true">
+    <div class="ai-head"><div><span class="ai-avatar">✳</span><div><strong>MK AI</strong><small>PORTFOLIO ASSISTANT · LOCAL DEMO</small></div></div><button id="aiClose" aria-label="Close assistant">×</button></div>
+    <div class="ai-messages" id="aiMessages"><div class="ai-message bot">Hey! I'm MK AI, your portfolio guide. Ask me about Mayank's skills, projects, education, or how to get in touch.</div></div>
+    <div class="ai-suggestions"><button data-prompt="Tell me about Mayank">About</button><button data-prompt="What projects has Mayank explored?">Projects</button><button data-prompt="How can I contact Mayank?">Contact</button></div>
+    <form id="aiForm" class="ai-input"><input id="aiQuestion" placeholder="Ask something..." aria-label="Ask MK AI"><button type="submit">↗</button></form>
+    <p class="ai-disclaimer">This is a scripted portfolio assistant, not a connected AI model.</p>
+  </aside>
+  <script src="script.js"></script>
+</body>
+</html>
